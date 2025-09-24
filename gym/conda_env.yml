@@ -2,15 +2,15 @@ name: decision-transformer-gym
 channels:
 - pytorch
 dependencies:
-- python=3.8.5
+- python=3.11
 - anaconda
-- cudatoolkit=10.
+#- cudatoolkit=10.
 - numpy
 - pip
 - pip:
-  - gym==0.18.3
-  - mujoco-py==2.0.2.13
-  - numpy==1.20.3
-  - torch==1.8.1
-  - transformers==4.5.1
-  - wandb==0.9.1
+  - gym==0.25
+  - mujoco-py==2.1.2.14
+  - numpy<2
+  - torch>=2.2
+  - transformers>=4.5.1
+  - wandb>=0.9.1
